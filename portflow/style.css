@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+    background-color: #fff;
+    display: flex
+}
+
+.caixa-logo {
+    padding: 2rem 2rem 2rem 7rem;
+    width: 20%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-header {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 2rem 5rem 2rem 2rem;
+}
+
+.ul-header {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.li-header {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-left: 2rem;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+
+.li-header:hover {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 18px;
+    transition: 0.8s;
+}
+
+.li-header-special {
+    font-family: Montserrat;
+    font-weight: 800;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+.li-header-special:hover {
+    font-size: 20px;
+    transition: 0.6s;
+}
+
+/*MAIN PART. 1*/
+
+.main-one {
+    width: 100%;
+    height: 603px;
+    background: transparent url('images/laranja\ azul\ recorte.png') 0% 0% no-repeat padding-box;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 6rem;
+}
+
+.txt-main-one {
+    font-family: Montserrat;
+    font-weight: 800;
+    color: #fff;
+    font-size: 3rem;
+}
+
+/*MAIN PART. 2*/
+
+.txt-dois-main-one {
+    font-family: Montserrat;
+    font-weight: 300;
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.txt-dois-main-one:hover {
+    font-size: 2.2rem;
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+#main-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    background-color: #fff;
+    margin: 3rem auto 3rem ;
+
+}
+
+.images-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 310px;
+    height: 310px;
+}
+
+.img-main {
+    width: 300px;
+    height: 300px;
+}
+
+.img-main:hover {
+    width: 330px;
+    height: 330px;
+    transition: 1s;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    height: 12vh;
+}
+
+#box-socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 12vh;
+    margin-left: 1.5rem;
+}
+
+.socialMedia {
+    padding-left: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia img {
+    width: 70%;
+}
+
+#box-copyright {
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+.copyright {
+    margin-left: 1rem;
+}
+
+.one {
+   font-size: 1.2rem;
+   font-family: Montserrat;
+   font-weight: 800;
+}
+
+.two {
+    font-size: 1rem;
+    font-family: Montserrat;
+    font-weight: 300;
+}
+
+/*MOBILE*/
+
+@media (min-width: 201px) and (max-width: 480px){
+
+}

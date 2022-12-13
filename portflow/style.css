@@ -7,14 +7,13 @@
 /*HEADER*/
 
 header {
-    position: fixed;
     width: 100%;
     height: 15vh;
     background-color: #fff;
     display: flex
 }
 
-.caixa-logo {
+.box-logo {
     padding: 2rem 2rem 2rem 7rem;
     width: 20%;
     height: 120px;
@@ -23,7 +22,7 @@ header {
     align-items: center;
 }
 
-.navigation-header {
+#nav-header {
     width: 80%;
     height: 120px;
     display: flex;
@@ -32,7 +31,11 @@ header {
     padding: 2rem 5rem 2rem 2rem;
 }
 
-.ul-header {
+#nav-mobile {
+    display: none;
+   }
+
+.menu {
     list-style: none;
     display: flex;
     justify-content: right;
@@ -99,8 +102,6 @@ header {
     font-size: 3rem;
 }
 
-/*MAIN PART. 2*/
-
 .txt-dois-main-one {
     font-family: Montserrat;
     font-weight: 300;
@@ -116,6 +117,8 @@ header {
     text-decoration: underline;
     transition: 0.8s;
 }
+
+/*MAIN PART. 2*/
 
 #main-two {
     display: flex;
@@ -177,7 +180,7 @@ footer {
 }
 
 #box-copyright {
-    width: 70%;
+    width: 50%;
     display: flex;
     margin: auto;
 }
@@ -186,20 +189,202 @@ footer {
     margin-left: 1rem;
 }
 
-.one {
+.txt-one {
    font-size: 1.2rem;
    font-family: Montserrat;
    font-weight: 800;
+   text-transform: capitalize;
 }
 
-.two {
+.txt-two {
     font-size: 1rem;
     font-family: Montserrat;
     font-weight: 300;
+    text-transform: capitalize;
+}
+
+#topo-button {
+    display: none;
 }
 
 /*MOBILE*/
 
 @media (min-width: 201px) and (max-width: 480px){
+    header {
+        width: 100%;
+        height: 6vh;
+        background-color: #fff;
+        display: block;
+    }
+    
+   #nav-header {
+    display: none;
+   }
+
+   #nav-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 30%;
+    height: 6vh;
+   }
+
+   #nav-mobile img{
+    width: 20%;
+    height: 50%;
+   }
+
+   .box-logo {
+    padding: 0;
+    width: 60%;
+    height: 6vh;
+    display: flex;
+    justify-content: left;
+    float: right;
+    padding-left: 1rem;
+   }
+
+   .portflow-logo {
+    width: 50%;
+   }
+
+   .main-one {
+    width: 100%;
+    height: 80vh;
+    background: transparent url(./images/laranja\ azul\ recorte2.png) 0% 0% no-repeat padding-box;
+    background-size: 100%;
+    display: flex;
+   }
+
+   .box-text {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+}
+    .txt-main-one {
+    font-family: Montserrat;
+    font-weight: 800;
+    color: #fff;
+    font-size: 2rem;
+}
+    .txt-dois-main-one {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #fff;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+    .txt-dois-main-one:hover {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+    #main-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: #fff;
+
+}
+
+    .images-main {
+    display: flex;
+    width: 310px;
+    height: 310px;
+}
+
+    .img-main {
+    width: 290px;
+    height: 290px;
+
+}
+
+    .img-main:hover {
+    width: 310px;
+    height: 310px;
+    transition: 1s;
+}
+
+footer {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 26vh;
+}
+
+#box-socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    height: 10vh;
+    background-color: turquoise;
+}
+
+.socialMedia {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia img {
+    width: 60%;
+    height: 60%;
+}
+
+#box-copyright {
+    width: 90%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding-top: 20px;
+}
+
+.copyright {
+    display: block;
+    width: 50%;
+    margin: 0;
+}
+
+.txt-one {
+   font-size: 1.2rem;
+   font-family: Montserrat;
+   font-weight: 800;
+   text-transform: capitalize;
+}
+
+.txt-two {
+    font-size: 0.9rem;
+    font-family: Montserrat;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+#topo-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 20px;
+    font-family: Montserrat;
+    background-color: #333333;
+    color: #fff;
+    margin-top: 10px;
+}
 
 }
